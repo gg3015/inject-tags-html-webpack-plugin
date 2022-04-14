@@ -1,0 +1,21 @@
+{
+  "name": "inject-tags-html-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": ["index.js","typings.d.ts"],
+  "types": "typings.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
+}
