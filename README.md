@@ -57,7 +57,7 @@ The default options for this plugin are shown below:
 ```js
 
 const options = {
-    title?: string, // content for tag title, will make sure only on title tag last
+    title?: string, // content for tag title, will make sure only one title tag last
     styles?: [{
         href?: string, // href for link https://***.css or ***.ico
         content?: string, // inline style
