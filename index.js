@@ -48,6 +48,16 @@ class InjectLabelHtmlWebpackPlugin {
         HtmlWebpackPlugin.getHooks(compilation).afterTemplateExecution.tapAsync(
           'InjectLabelHtmlWebpackPlugin',
           (data, cb) => {
+            if (this.options.title !== undefined) {
+              data.headTags.push(
+                HtmlWebpackPlugin.createHtmlTagObject(
+                  'title',
+                  {},
+                  this.options.title || '',
+                  {},
+                ),
+              );
+            }
             if (this.options.metas) {
               data.headTags && this.options.metas.map((item) => {
                 item.name &&
@@ -134,7 +144,7 @@ class InjectLabelHtmlWebpackPlugin {
         HtmlWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(
           'InjectLabelHtmlWebpackPlugin',
           (data, cb) => {
-            data.html = replaceSameTag('title', this.options.title, data.html);
+            if (this.options.title !== undefined) data.html = replaceSameTag('title', this.options.title, data.html);
 
             cb(null, data);
           },
