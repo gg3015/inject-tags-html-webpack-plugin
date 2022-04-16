@@ -5,10 +5,24 @@
   "main": "index.js",
   "files": ["index.js","typings.d.ts"],
   "types": "typings.d.ts",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/gg3015/inject-tags-html-webpack-plugin.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "html",
+    "html-webpack-plugin",
+    "inject",
+    "tags",
+    "inject tags",
+    "style",
+    "meta",
+    "title"
+  ],
+  "author": "gg3015",
   "license": "ISC",
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",

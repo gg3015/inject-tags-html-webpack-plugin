@@ -39,8 +39,8 @@ Which will generate html like this
 ```html
 <head>
   <!-- other head content -->
-  <meta name='viewport' content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,user-scale=no">
   <title>test</title>
+  <meta name='viewport' content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,user-scale=no">
   <style>body{font-size:calc(100vw / 18.75)}</style>
 </head>
 ```
@@ -57,7 +57,7 @@ The default options for this plugin are shown below:
 ```js
 
 const options = {
-    title?: string, // content for tag title
+    title?: string, // content for tag title, will make sure only on title tag last
     styles?: [{
         href?: string, // href for link https://***.css or ***.ico
         content?: string, // inline style
